@@ -17,11 +17,19 @@
 .nav-link {
   color: #000;
   font-size: 24px;
+  font-weight: 500;
+  transition: color .3s;
+}
+.nav-link:hover{
+  color: #fff;
 }
 .nav-item {
   margin-left: 3rem;
 }
-.menu-icon{
+.menu-icon {
+  display: none;
+}
+.nav-list-mobile{
   display: none;
 }
 /* HERO SECTION STYLES */
@@ -136,18 +144,46 @@
   z-index: -1;
 }
 
-
 /* RESPONSIVE DESIGN FOR MEDIUM SCREENS */
-@media screen and (max-width: 820px){
-  .header{
+@media screen and (max-width: 820px) {
+  .header {
     padding: 1rem 2rem;
   }
-  .nav-list{
+  .nav-list-mobile{
+    position: fixed;
+    display: block;
+    background-color: #fad3cf;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    padding: 2rem;
+    transition: left .4s;
+  }
+  .show-nav{
+    left: 0;
+  }
+  .nav-item-mobile{
+    margin-bottom: 1.5rem;
+  }
+  .nav-link-mobile{
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .nav-list {
     display: none;
   }
-  .menu-icon{
+  .close-icon{
+    position: absolute;
+    right: 10%;
+    top: 2rem;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .menu-icon {
     display: block;
-    font-size: 24px;
+    font-size: 25px;
     cursor: pointer;
   }
   .hero-section {
@@ -156,10 +192,10 @@
     overflow: hidden;
     z-index: 1;
   }
-  .section-padding{
+  .section-padding {
     padding: 5rem 2rem;
   }
-  .hero-section-data{
+  .hero-section-data {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +216,7 @@
     width: auto;
     align-self: flex-end;
   }
-  .hero-section-left button{
+  .hero-section-left button {
     width: 181px;
     height: 42px;
     font-size: 15px;
@@ -188,8 +224,8 @@
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
-@media screen and (max-width: 767px){
-  .header{
+@media screen and (max-width: 767px) {
+  .header {
     padding: 1rem 1rem;
   }
   .hero-section-data {
@@ -200,16 +236,16 @@
     justify-content: space-between;
     align-items: center;
   }
-  .section-padding{
-    padding-top: 6rem;
+  .section-padding {
+    padding-top: 7rem;
     padding-bottom: 2rem;
     padding-right: 1rem;
     padding-left: 1rem;
   }
-  .hero-section-left{
+  .hero-section-left {
     width: 100%;
   }
-  .hero-section-right{
+  .hero-section-right {
     width: 100%;
   }
   .hero-section-left p {

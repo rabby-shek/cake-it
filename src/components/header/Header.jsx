@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import BrandLogo from "../../assets/images/brand-logo.png";
 import { CgMenuCake } from "react-icons/cg";
+import { IoMdClose } from "react-icons/io";
 const Header = () => {
+  const [showNav, setShowNav] = useState(false);
   const navItems = [
     {
       id: 1,
@@ -24,6 +26,9 @@ const Header = () => {
       path: "#contact",
     },
   ];
+  const handleShowNav = () => {
+    setShowNav(!showNav);
+  };
   return (
     <header className="header">
       <div className="logo-container">
@@ -41,9 +46,22 @@ const Header = () => {
             );
           })}
         </ul>
-        <CgMenuCake className="menu-icon" />
+        <CgMenuCake className="menu-icon" onClick={handleShowNav} />
       </div>
-
+      <ul
+        className={`nav-list-mobile drop-shadow ${showNav ? "show-nav" : ""}`}
+      >
+        <IoMdClose className="close-icon" onClick={() => setShowNav(false)} />
+        {navItems.map((item) => {
+          return (
+            <li key={item.id} className="nav-item-mobile">
+              <a href={item.path} className="nav-link-mobile">
+                {item.title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
     </header>
   );
 };
