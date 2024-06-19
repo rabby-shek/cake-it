@@ -1,7 +1,32 @@
+/* HEADER STYLES */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  color: #000;
+  font-size: 24px;
+}
+.nav-item {
+  margin-left: 3rem;
+}
+
+/* HERO SECTION STYLES */
 .hero-section {
   position: relative;
   height: 100vh;
-  overflow: hidden; 
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -13,49 +38,98 @@
   background-color: var(--primary-color);
   z-index: -1;
 }
-.circle-1{
+.hero-section-data {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-section-left {
+  width: 60%;
+}
+.hero-section-title {
+  font-size: 96px;
+  font-weight: bold;
+  color: #2d2121;
+}
+.hero-section-left p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.hero-section-left button {
+  background-color: #000;
+  color: #fff;
+  width: 281px;
+  height: 62px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.hero-section-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section-right img {
+  transform: rotate(15deg);
+  height: 450px;
+  width: auto;
+}
+.circle-1 {
   width: 241px;
   height: 249px;
   z-index: 1;
-  background-color: #FAD3CF;
+  background-color: #fad3cf;
   position: absolute;
   border-radius: 50%;
-  left: 681px;
+  left: 50%;
   top: 59px;
+  z-index: -1;
 }
-.circle-2{
-  background-color: #DAA5A5;
+.circle-2 {
+  background-color: #daa5a5;
   width: 142px;
   height: 142px;
   border-radius: 50%;
   position: absolute;
-  left: 371px;
+  left: 30%;
+  top: 0;
+  z-index: -1;
 }
-.circle-3{
-  background-color: #DAA5A5;
+.circle-3 {
+  background-color: #daa5a5;
   width: 298px;
   height: 307px;
   border-radius: 50%;
   position: absolute;
   left: -25px;
   top: 205px;
+  z-index: -1;
 }
-.circle-4{
+.circle-4 {
   width: 241px;
   height: 249px;
   z-index: 1;
-  background-color: #FAD3CF;
+  background-color: #fad3cf;
   position: absolute;
   border-radius: 50%;
   top: 468px;
   left: 550px;
+  z-index: -1;
 }
-.circle-5{
-  background-color: #DAA5A5;
+.circle-5 {
+  background-color: #daa5a5;
   width: 142px;
   height: 142px;
   border-radius: 50%;
   position: absolute;
   left: 342px;
   top: 549px;
+  z-index: -1;
 }

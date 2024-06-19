@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -5,9 +6,16 @@
 }
 
 body{
+  font-family: 'Roboto', sans-serif;
   background-color: #E5E5E5;
 }
 
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
 /* ========= CSS VARIABLES ========== */
 :root{
   --primary-color: #EFB5B5;
@@ -17,4 +25,7 @@ body{
 /* REUSABLE CSS CLASSES */
 .drop-shadow{
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.section-padding{
+  padding: 3rem 5rem;
 }
