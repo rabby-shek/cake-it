@@ -2,7 +2,7 @@ import React from "react";
 import HeroCake from "../../assets/images/hero-section-img.png";
 const HeroSection = () => {
   return (
-    <div className="hero-section ">
+    <section className="hero-section" id="home">
       <div className="hero-section-data section-padding">
         <div className="hero-section-left">
           <div className="hero-section-title drop-shadow">Homemade cakes</div>
@@ -24,7 +24,7 @@ const HeroSection = () => {
       <span className="circle-3 "></span>
       <span className="circle-4 "></span>
       <span className="circle-5 "></span>
-    </div>
+    </section>
   );
 };
 
