@@ -1,5 +1,6 @@
 import React from "react";
 import BrandLogo from "../../assets/images/brand-logo.png";
+import { CgMenuCake } from "react-icons/cg";
 const Header = () => {
   const navItems = [
     {
@@ -40,7 +41,9 @@ const Header = () => {
             );
           })}
         </ul>
+        <CgMenuCake className="menu-icon" />
       </div>
+
     </header>
   );
 };
