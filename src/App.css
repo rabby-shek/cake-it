@@ -376,7 +376,10 @@ ul {
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media screen and (max-width: 767px) {
   .header {
-    padding: 1rem 1rem;
+    padding: .5rem 2rem;
+  }
+  .logo-container span{
+    display: none;
   }
   .hero-section-data {
     height: 100%;
@@ -404,5 +407,14 @@ ul {
   }
   .about-data .item-2 {
     font-size: 16px;
+  }
+  .about-data .item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #daa5a5;
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
   }
 }

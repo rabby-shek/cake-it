@@ -45,7 +45,7 @@ const Shop = () => {
         }
     ]
   return (
-    <section className='shop-section section-padding'>
+    <section className='shop-section section-padding' id='shop'>
       <div className="section-title drop-shadow">Shop</div>
       <div className="shop-items">
        {
