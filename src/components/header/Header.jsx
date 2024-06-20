@@ -63,7 +63,7 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="logo-container">
-        <img src={BrandLogo} alt="brand-logo" className="logo" />
+        <img src={BrandLogo} alt="brand-logo" className="logo" /> <span>CakeIt</span>
       </div>
       <div className="nav-links-container">
         <ul className="nav-list">

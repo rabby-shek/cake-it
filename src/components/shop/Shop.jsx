@@ -1,10 +1,10 @@
 import React from 'react'
-import Cake1 from '../../assets/images/cake-1.png';
-import Cake2 from '../../assets/images/cake-2.png';
-import Cake3 from '../../assets/images/cake-3.png';
-import Cake4 from '../../assets/images/cake-4.png';
-import Cake5 from '../../assets/images/cake-5.png';
-import Cake6 from '../../assets/images/cake-6.png';
+import Cake1 from '../../assets/images/cake-1.jpeg';
+import Cake2 from '../../assets/images/cake-2.jpeg';
+import Cake3 from '../../assets/images/cake-3.jpeg';
+import Cake4 from '../../assets/images/cake.jpg';
+import Cake5 from '../../assets/images/cake-5.jpeg';
+import Cake6 from '../../assets/images/cake-6.jpeg';
 const Shop = () => {
     const shopItems = [
         {
@@ -50,7 +50,7 @@ const Shop = () => {
       <div className="shop-items">
        {
         shopItems.map((item) => {
-            return  <div key={item.id} className="shop-item">
+            return  <div key={item.id} className="shop-item drop-shadow">
             <img src={item.image} alt="cake" />
             <div className='cake-data'>
                 <h3>{item.name}</h3>

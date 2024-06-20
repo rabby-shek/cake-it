@@ -9,6 +9,17 @@
   align-items: center;
   padding: 1rem 5rem;
 }
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.logo-container span{
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
 .nav-list {
   display: flex;
   justify-content: center;
@@ -189,10 +200,19 @@
 .shop-item{
   padding: 0;
   background-color: #fff;
+  border-radius: 10px;
 }
 .shop-item img{
   width: 100%;
-  background-color: red;
+  height: 300px;
+  border-top-right-radius: 10px;
+}
+.cake-data{
+  padding: 10px;
+  color: #8b8b8b;
+}
+.cake-data p{
+  margin-top: 1rem;
 }
 /* FOOTER STYLES */
 .container {
