@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/cake-it/static/css/main.a0fb930c.css",
+    "main.js": "/cake-it/static/js/main.f31ad109.js",
+    "static/media/cake-1.jpeg": "/cake-it/static/media/cake-1.28e9ef2352de09791220.jpeg",
+    "static/media/hero-section-img.png": "/cake-it/static/media/hero-section-img.ab5e1363170f59c642a5.png",
+    "static/media/cake-2.jpeg": "/cake-it/static/media/cake-2.97e342db501e30758aa2.jpeg",
+    "static/media/about-img.png": "/cake-it/static/media/about-img.a264244c2ff9cb458b76.png",
+    "static/media/cake.jpg": "/cake-it/static/media/cake.7691af6ab92f163c9fef.jpg",
+    "static/media/cake-5.jpeg": "/cake-it/static/media/cake-5.117877e766381db14fe1.jpeg",
+    "static/media/cake-6.jpeg": "/cake-it/static/media/cake-6.347524ee6012983ea344.jpeg",
+    "static/media/cake-3.jpeg": "/cake-it/static/media/cake-3.dc468180457ca5e52559.jpeg",
+    "index.html": "/cake-it/index.html",
+    "main.a0fb930c.css.map": "/cake-it/static/css/main.a0fb930c.css.map",
+    "main.f31ad109.js.map": "/cake-it/static/js/main.f31ad109.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0fb930c.css",
+    "static/js/main.f31ad109.js"
+  ]
+}
