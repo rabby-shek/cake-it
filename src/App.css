@@ -164,8 +164,15 @@
   z-index: -1;
 }
 /* ABOUT SECTION STYLES */
-
+.about-section{
+  background: linear-gradient(
+    to right,
+    rgba(255, 203, 203, 0) 60%,
+    rgba(255, 203, 203, 1) 60%
+  );
+}
 .about-data {
+  
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -176,7 +183,6 @@
   padding: 10px; /* Optional: Adds padding inside grid items */
 }
 .about-data .item-1 {
-  background-color: #daa5a5;
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -190,11 +196,15 @@
 }
 /* SHOP STYLES */
 .shop-section{
-  background-color: #daa5a5;
+  background: linear-gradient(
+    to right,
+    rgba(255, 203, 203, 1) 60%,
+    rgba(255, 203, 203, 0) 60%
+  );
 }
 .shop-items{
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 .shop-item{
@@ -227,7 +237,11 @@ ul {
   list-style: none;
 }
 .footer {
-  background: url("./assets/images/wave.svg");
+  background: linear-gradient(
+    to right,
+    rgba(255, 203, 203, 0) 60%,
+    rgba(255, 203, 203, 1) 60%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 0;
@@ -412,7 +426,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #daa5a5;
     height: auto;
     width: 100%;
     border-radius: 50%;
